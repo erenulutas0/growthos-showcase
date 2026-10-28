@@ -1,0 +1,306 @@
+{
+  "schema": "growthos-creative-review-packets-v1",
+  "sourceDay": "2026-10-27",
+  "reviewOnly": true,
+  "executionAllowed": false,
+  "entries": [
+    {
+      "id": "cmp:long-hook:STORY_EXCERPT:kami",
+      "testPlan": {
+        "schema": "creative-test-plan-v1",
+        "status": "DRAFT_NOT_REGISTERED",
+        "definitionStatus": "PROPOSED_NOT_INSTRUMENTED",
+        "singleChange": {
+          "tr": "Açılış: eser kesiti veya ürün anlatımı",
+          "en": "Opening: story excerpt or product explanation"
+        },
+        "variants": [
+          {
+            "id": "a",
+            "copy": {
+              "tr": "[İzinli eserden merak uyandıran kesit] Devamını Kami’de oku.",
+              "en": "[Intriguing excerpt from an authorized work] Continue reading on Kami."
+            }
+          },
+          {
+            "id": "b",
+            "copy": {
+              "tr": "Yeni hikâyelerle buluş. Kami’de okumaya başla.",
+              "en": "Discover stories. Start reading on Kami."
+            }
+          }
+        ],
+        "primaryEvent": "reader_qualified_session",
+        "denominator": "landing_visit",
+        "qualifiedDefinition": {
+          "tr": "Öneri: bağlantı ziyaretinden sonraki 24 saatte bir eserde en az 60 saniye etkin okuma. Süre olayı ve eşleştirme ekipçe doğrulanmalı.",
+          "en": "Proposal: at least 60 seconds of active reading in a work within 24 hours of the link visit. Event timing and attribution need team validation."
+        },
+        "fixed": {
+          "tr": "Aynı hedef kitle, kanal, açılış adresi, süre/format ve çağrı; yalnız belirtilen açılış veya vurgu değişir.",
+          "en": "Keep audience, channel, landing page, duration/format and call to action constant; change only the stated opening or emphasis."
+        },
+        "interpretation": {
+          "tr": "Henüz sonuç yok. Örneklem, süre ve karar kuralı önceden belirlenmeden kazanan seçilmez. Tıklama tek başına ürün kullanımı değildir.",
+          "en": "No results yet. Predefine sample size, window and decision rule before comparing outcomes. Clicks alone do not establish product use."
+        },
+        "assetStatus": "AUTHORIZED_WORK_MISSING",
+        "nextAction": {
+          "tr": "Tanıtım izni olan bir eser ve kullanılabilecek kesiti seç.",
+          "en": "Select an authorized work and permitted excerpt."
+        },
+        "landingUrl": null,
+        "channel": null,
+        "budget": null,
+        "sampleSize": null,
+        "window": null,
+        "trackingStatus": "TEAM_VALIDATION_REQUIRED",
+        "rightsStatus": "NOT_CONFIRMED",
+        "executionAllowed": false,
+        "autoPublish": false,
+        "modelCalls": 0
+      },
+      "draft": {
+        "tr": "Bu hikâyenin devamında ne oluyor? İzinli eserinden kısa bir kesit → Kami’de devamını oku.",
+        "en": "What happens next? A short excerpt from an authorized work → continue reading on Kami."
+      },
+      "brand": "kami",
+      "title": {
+        "tr": "Kami · Eserden kesit",
+        "en": "Kami · Story excerpt"
+      },
+      "reason": {
+        "tr": "Okur kazanımıyla doğrudan ilişkili; izinli tek eserle küçük bir karşılaştırma hazırlanabilir.",
+        "en": "Directly related to reader acquisition; one authorized work enables a small comparison."
+      },
+      "limit": {
+        "tr": "Uzun yayın süresi dönüşüm kanıtı değildir. Örneklem iki reklamla sınırlı.",
+        "en": "Ad longevity does not prove conversion. The sample contains two ads."
+      },
+      "evidence": [
+        {
+          "competitorId": "kami-galatea",
+          "advertiser": "Inkitt Galatea",
+          "adId": "918475591021952",
+          "fact": "Hikâyeden parça · 36 gündür yayında · en · 29 sn",
+          "sourceUrl": "https://www.facebook.com/InkittGalatea/"
+        },
+        {
+          "competitorId": "kami-galatea",
+          "advertiser": "Inkitt Galatea",
+          "adId": "1465044298865780",
+          "fact": "Hikâyeden parça · 36 gündür yayında · en · 16 sn",
+          "sourceUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&media_type=all&search_type=page&view_all_page_id=682019582218619"
+        }
+      ],
+      "evidenceStatus": "LINKED_OBSERVATIONS",
+      "status": "REVIEW_ONLY",
+      "hypothesis": "Hikâyeden parça açılışı, Ürün özelliği açılışından daha fazla nitelikli okuma getirir.",
+      "metric": "reader_qualified_session",
+      "blockers": [
+        "INVALID_LANDING_URL",
+        "INVALID_CHANNEL",
+        "QUALIFIED_DEFINITION_REQUIRED",
+        "MIN_PER_VARIANT_AT_LEAST_30",
+        "INVALID_WINDOW"
+      ],
+      "sourceDay": "2026-10-27"
+    },
+    {
+      "id": "cmp:writer-gap:kami",
+      "testPlan": {
+        "schema": "creative-test-plan-v1",
+        "status": "DRAFT_NOT_REGISTERED",
+        "definitionStatus": "PROPOSED_NOT_INSTRUMENTED",
+        "singleChange": {
+          "tr": "Vurgu: okurlarla buluşma veya yazar topluluğu",
+          "en": "Emphasis: reaching readers or joining a writing community"
+        },
+        "variants": [
+          {
+            "id": "a",
+            "copy": {
+              "tr": "Hikâyeni okurlarla buluştur. Kami’de yayımla.",
+              "en": "Bring your story to readers. Publish on Kami."
+            }
+          },
+          {
+            "id": "b",
+            "copy": {
+              "tr": "Yazan bir topluluğa katıl. Hikâyeni Kami’de paylaş.",
+              "en": "Join a writing community. Share your story on Kami."
+            }
+          }
+        ],
+        "primaryEvent": "writer_first_publication",
+        "denominator": "landing_visit",
+        "qualifiedDefinition": {
+          "tr": "Öneri: bağlantı ziyaretinden sonraki 7 günde ilk eserini yayımlayan yeni yazarların oranı. Taslak kaydı sayılmaz; ilk yayın geçmişi ekip analitiğinde doğrulanmalı.",
+          "en": "Proposal: share of new writers who publish their first work within 7 days of the link visit. Saved drafts do not count; first-publication history needs verification in team analytics."
+        },
+        "fixed": {
+          "tr": "Aynı hedef kitle, kanal, açılış adresi, süre/format ve çağrı; yalnız belirtilen açılış veya vurgu değişir.",
+          "en": "Keep audience, channel, landing page, duration/format and call to action constant; change only the stated opening or emphasis."
+        },
+        "interpretation": {
+          "tr": "Henüz sonuç yok. Örneklem, süre ve karar kuralı önceden belirlenmeden kazanan seçilmez. Tıklama tek başına ürün kullanımı değildir.",
+          "en": "No results yet. Predefine sample size, window and decision rule before comparing outcomes. Clicks alone do not establish product use."
+        },
+        "assetStatus": "WORK_NOT_REQUIRED_PRODUCT_WORDING_UNVERIFIED",
+        "nextAction": {
+          "tr": "Topluluk ve yayımlama ifadelerini, ardından yazarın açılış sayfasını ürün ekibiyle doğrula.",
+          "en": "Validate community and publishing wording, then the writer landing page, with the product team."
+        },
+        "landingUrl": null,
+        "channel": null,
+        "budget": null,
+        "sampleSize": null,
+        "window": null,
+        "trackingStatus": "TEAM_VALIDATION_REQUIRED",
+        "rightsStatus": "NOT_CONFIRMED",
+        "executionAllowed": false,
+        "autoPublish": false,
+        "modelCalls": 0
+      },
+      "draft": {
+        "tr": "Hikâyeni okurlarla buluştur. Kami’de yayımla, topluluğa katıl.",
+        "en": "Bring your story to readers. Publish on Kami and join the community."
+      },
+      "brand": "kami",
+      "title": {
+        "tr": "Kami · Yazar topluluğu",
+        "en": "Kami · Writer community"
+      },
+      "reason": {
+        "tr": "Ürün sahibinin belirttiği topluluk ve tanınırlık faydasına uyuyor; okur kazanımından ayrı ölçülmeli.",
+        "en": "Fits the owner-stated community and visibility benefit; measure separately from reader acquisition."
+      },
+      "limit": {
+        "tr": "19 reklamda görülmemesi pazar boşluğu veya talep kanıtı değildir. Bağlantılı doğrudan kanıt eksik.",
+        "en": "Absence in 19 sampled ads proves neither a market gap nor demand. Direct linked evidence is missing."
+      },
+      "evidence": [],
+      "evidenceStatus": "DIRECT_LINK_MISSING",
+      "status": "REVIEW_ONLY",
+      "hypothesis": "Okur geri bildirimi vaadi, topluluk vaadine göre daha fazla ilk yayın getirir.",
+      "metric": "writer_first_publication",
+      "blockers": [
+        "INVALID_LANDING_URL",
+        "INVALID_CHANNEL",
+        "QUALIFIED_DEFINITION_REQUIRED",
+        "MIN_PER_VARIANT_AT_LEAST_30",
+        "INVALID_WINDOW"
+      ],
+      "sourceDay": "2026-10-27"
+    },
+    {
+      "id": "cmp:long-hook:STORY_CONFLICT_SUMMARY:surreel",
+      "testPlan": {
+        "schema": "creative-test-plan-v1",
+        "status": "DRAFT_NOT_REGISTERED",
+        "definitionStatus": "PROPOSED_NOT_INSTRUMENTED",
+        "singleChange": {
+          "tr": "Aynı sahnenin açılışı: çatışma veya karakter tanıtımı",
+          "en": "Same scene opening: conflict or character introduction"
+        },
+        "variants": [
+          {
+            "id": "a",
+            "copy": {
+              "tr": "[İzinli sahnenin çatışması ilk 3 saniyede] Devamı Surreel’de.",
+              "en": "[Conflict from an authorized scene in the first 3 seconds] Continue on Surreel."
+            }
+          },
+          {
+            "id": "b",
+            "copy": {
+              "tr": "[Aynı sahneden karakter tanıtımı ilk 3 saniyede] Devamı Surreel’de.",
+              "en": "[Character introduction from the same scene in the first 3 seconds] Continue on Surreel."
+            }
+          }
+        ],
+        "primaryEvent": "viewer_qualified_watch",
+        "denominator": "landing_visit",
+        "qualifiedDefinition": {
+          "tr": "Öneri: bağlantı ziyaretinden sonraki 24 saatte en az 30 saniye etkin izleme. Kısa bölümler ve mevcut izleme olayları için tanım ekipçe uyarlanmalı.",
+          "en": "Proposal: at least 30 seconds of active viewing within 24 hours of the link visit. Adapt the definition to short episodes and available viewing events with the team."
+        },
+        "fixed": {
+          "tr": "Aynı hedef kitle, kanal, açılış adresi, süre/format ve çağrı; yalnız belirtilen açılış veya vurgu değişir.",
+          "en": "Keep audience, channel, landing page, duration/format and call to action constant; change only the stated opening or emphasis."
+        },
+        "interpretation": {
+          "tr": "Henüz sonuç yok. Örneklem, süre ve karar kuralı önceden belirlenmeden kazanan seçilmez. Tıklama tek başına ürün kullanımı değildir.",
+          "en": "No results yet. Predefine sample size, window and decision rule before comparing outcomes. Clicks alone do not establish product use."
+        },
+        "assetStatus": "AUTHORIZED_SCENE_MISSING",
+        "nextAction": {
+          "tr": "Tanıtım izni olan sahneyi ve iki açılış kesimini seç.",
+          "en": "Choose an authorized scene and its two opening cuts."
+        },
+        "landingUrl": null,
+        "channel": null,
+        "budget": null,
+        "sampleSize": null,
+        "window": null,
+        "trackingStatus": "TEAM_VALIDATION_REQUIRED",
+        "rightsStatus": "NOT_CONFIRMED",
+        "executionAllowed": false,
+        "autoPublish": false,
+        "modelCalls": 0
+      },
+      "draft": {
+        "tr": "İzinli sahnenin temel çatışması ilk üç saniyede → hikâyenin devamı Surreel’de.",
+        "en": "Reveal the core conflict of an authorized scene in the first three seconds → continue on Surreel."
+      },
+      "brand": "surreel",
+      "title": {
+        "tr": "Surreel · İlk saniyede çatışma",
+        "en": "Surreel · Conflict first"
+      },
+      "reason": {
+        "tr": "Kısa dizi formatıyla doğrudan ilişkili; aynı sahnenin iki açılışı karşılaştırılabilir.",
+        "en": "Directly fits short drama; compare two openings using the same authorized scene."
+      },
+      "limit": {
+        "tr": "Rakip reklam yapısı gözlendi; harcama, dönüşüm ve Türkiye etkisi bilinmiyor.",
+        "en": "Competitor creative structure was observed; spend, conversion and Turkish-market impact are unknown."
+      },
+      "evidence": [
+        {
+          "competitorId": "surreel-netshort",
+          "advertiser": "NetShort adlı çoklu hesaplar ve telekom ortağı (anahtar kelime okuması)",
+          "adId": "925744703410717",
+          "fact": "Çatışma özeti · 236 gündür yayında · ko · 304 sn",
+          "sourceUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&media_type=all&q=%22NetShort%22&search_type=keyword_exact_phrase"
+        },
+        {
+          "competitorId": "extra-inkitt-candyjar",
+          "advertiser": "Inkitt CandyJar",
+          "adId": "2147752919150198",
+          "fact": "Çatışma özeti · 53 gündür yayında · pt · 202 sn",
+          "sourceUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&media_type=all&search_type=page&view_all_page_id=149099801620314"
+        },
+        {
+          "competitorId": "extra-inkitt-candyjar",
+          "advertiser": "Inkitt CandyJar",
+          "adId": "1578038587390243",
+          "fact": "Çatışma özeti · 53 gündür yayında · it · 53 sn",
+          "sourceUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&media_type=all&search_type=page&view_all_page_id=149099801620314"
+        }
+      ],
+      "evidenceStatus": "LINKED_OBSERVATIONS",
+      "status": "REVIEW_ONLY",
+      "hypothesis": "Çatışma özeti açılışı, Afiş / başlık kartı açılışından daha fazla nitelikli izleme getirir.",
+      "metric": "viewer_qualified_watch",
+      "blockers": [
+        "INVALID_LANDING_URL",
+        "INVALID_CHANNEL",
+        "QUALIFIED_DEFINITION_REQUIRED",
+        "MIN_PER_VARIANT_AT_LEAST_30",
+        "INVALID_WINDOW"
+      ],
+      "sourceDay": "2026-10-27"
+    }
+  ]
+}
