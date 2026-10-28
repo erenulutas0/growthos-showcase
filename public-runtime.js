@@ -1,0 +1,5 @@
+// A read-only snapshot adapter, not an API client. Unknown routes and all writes fail closed.
+(()=>{const base=new URL('.',document.currentScript.src),original=window.fetch.bind(window);let snapshot;
+ const load=()=>snapshot??=(original(new URL('snapshot.json',base)).then(r=>{if(!r.ok)throw new Error('Sunum kaydı okunamadı');return r.json();}));
+ window.fetch=async(input,options={})=>{const u=new URL(typeof input==='string'?input:input.url,location.href);if(u.origin!==base.origin)return new Response('{}',{status:403});const local=u.pathname.slice(base.pathname.length);if(local.startsWith('api/')){if((options.method??'GET').toUpperCase()!=='GET')return new Response(JSON.stringify({error:{message:'Sunum sürümü salt okunur.'}}),{status:405});const key={'api/competitor-analysis':'competitors','api/daily-brief':'daily'}[local];if(!key)return new Response('{}',{status:404});const d=await load();return new Response(JSON.stringify(d[key]),{headers:{'Content-Type':'application/json'}});}return original(input,options);};
+})();
