@@ -1,9 +1,9 @@
 {
   "schema": "growthos-public-showcase-v1",
-  "builtAt": "2026-10-28T06:38:03.857Z",
+  "builtAt": "2026-10-28T07:06:08.831Z",
   "sourceDay": "2026-10-27",
   "readOnly": true,
   "backendConnected": false,
-  "sha256": "23ad1adf20f6263fd06c86d3f0c0fb84c59477e171776c0acc9647d65907e920",
+  "sha256": "9dd000eb356441ed8a316b6857c0ca93571290d6e533e15ddb25b91bcd3e94cf",
   "basePath": "/growthos-showcase/"
 }

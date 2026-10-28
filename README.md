@@ -1,5 +1,7 @@
 # GrowthOS · public research showcase
 
-Read-only, curated presentation: https://erenulutas0.github.io/growthos-showcase/
+English: https://erenulutas0.github.io/growthos-showcase/en/
 
-No backend, credentials, private works, sessions or company workflows. Data dates are shown in the application. Research observations and hypotheses are not advertising performance or verified demographics.
+Türkçe: https://erenulutas0.github.io/growthos-showcase/
+
+Independent side-project prototype for team review. Read-only curated public observations; no backend, credentials, private works, sessions or company workflows. Research hypotheses are not advertising performance or verified audience demographics.
